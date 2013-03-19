@@ -1,0 +1,548 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SerializationWrapper</name>
+    </assembly>
+    <members>
+        <member name="M:SerializationWrapper.CompressedWrapper.GetObject">
+            <summary>
+            Returns the wrapped object
+            </summary>
+            <returns>The wrapped object</returns>
+        </member>
+        <member name="M:SerializationWrapper.CompressedWrapper.GetObject(SerializationWrapper.CompressedWrapperBase.CompressionType)">
+            <summary>
+            Returns the wrapped object
+            </summary>
+            <returns>The wrapped object</returns>
+            <param name="compressionType">Compression algorithm to use</param>
+        </member>
+        <member name="M:SerializationWrapper.CompressedWrapper.#ctor(System.Object)">
+            <summary>
+            Creates an instance of the class, initializing
+            it with the compressed object, which is immediately
+            serialized and compressed.
+            </summary>
+            <remarks>
+            <para>
+            The wrappedObject must be marked with the Serializable attribute.
+            </para>
+            </remarks>
+            <param name="wrappedObject">The object to be compressed</param>
+        </member>
+        <member name="M:SerializationWrapper.CompressedWrapper.#ctor(System.Object,SerializationWrapper.CompressedWrapperBase.CompressionType)">
+            <summary>
+            Creates an instance of the class, initializing
+            it with the compressed object, which is immediately
+            serialized and compressed.
+            </summary>
+            <remarks>
+            <para>
+            The wrappedObject must be marked with the Serializable attribute.
+            </para>
+            </remarks>
+            <param name="wrappedObject">The object to be compressed</param>
+            <param name="compressionType">Compression algorithm to use</param>
+        </member>
+        <member name="P:SerializationWrapper.CompressedWrapper.CompressedData">
+            <summary>
+            Gets or sets the compressed bytes contained
+            in the wrapper object.
+            </summary>
+        </member>
+        <member name="M:SerializationWrapper.CompressedWrapper`1.GetObject">
+            <summary>
+            Returns the wrapped object
+            </summary>
+            <returns>The wrapped object</returns>
+        </member>
+        <member name="M:SerializationWrapper.CompressedWrapper`1.GetObject(SerializationWrapper.CompressedWrapperBase.CompressionType)">
+            <summary>
+            Returns the wrapped object
+            </summary>
+            <returns>The wrapped object</returns>
+            <param name="compressionType">Compression algorithm to use</param>
+        </member>
+        <member name="M:SerializationWrapper.CompressedWrapper`1.#ctor(`0)">
+            <summary>
+            Creates an instance of the class, initializing
+            it with the compressed object, which is immediately
+            serialized and compressed.
+            </summary>
+            <remarks>
+            <para>
+            The wrappedObject must be marked with the Serializable attribute.
+            </para>
+            </remarks>
+            <param name="wrappedObject">The object to be compressed</param>
+        </member>
+        <member name="M:SerializationWrapper.CompressedWrapper`1.#ctor(`0,SerializationWrapper.CompressedWrapperBase.CompressionType)">
+            <summary>
+            Creates an instance of the class, initializing
+            it with the compressed object, which is immediately
+            serialized and compressed.
+            </summary>
+            <remarks>
+            <para>
+            The wrappedObject must be marked with the Serializable attribute.
+            </para>
+            </remarks>
+            <param name="wrappedObject">The object to be compressed</param>
+            <param name="compressionType">Compression algorithm to use</param>
+        </member>
+        <member name="P:SerializationWrapper.CompressedWrapper`1.CompressedData">
+            <summary>
+            Gets or sets the compressed bytes contained
+            in the wrapper object.
+            </summary>
+        </member>
+        <member name="M:SerializationWrapper.CryptoWrapperBase.CreateBase64IV(System.Security.Cryptography.SymmetricAlgorithm)">
+            <summary>
+            Creates a random IV value appropriate for
+            the encryption algorithm
+            </summary>
+            <param name="encryptionAlgorithm">Instance of SymmetricAlgorithm used to create the IV</param>
+            <returns>Base64 encoded byte array containing the IV value</returns>
+        </member>
+        <member name="M:SerializationWrapper.CryptoWrapperBase.CreateBase64Key">
+            <summary>
+            Creates a random key value appropriate for
+            the default encryption algorithm
+            </summary>
+            <returns>Base64 encoded byte array containing the key value</returns>
+        </member>
+        <member name="M:SerializationWrapper.CryptoWrapperBase.CreateBase64Key(SerializationWrapper.CryptoWrapperBase.AlgorithmType)">
+            <summary>
+            Creates a random key value appropriate for
+            the default encryption algorithm
+            </summary>
+            <param name="calg">Type of algorithm to use for encryption</param>
+            <returns>Base64 encoded byte array containing the key value</returns>
+        </member>
+        <member name="M:SerializationWrapper.CryptoWrapperBase.CreateBase64Key(System.String)">
+            <summary>
+            Creates a random key value by using
+            the supplied password as a seed value
+            </summary>
+            <remarks>
+            Keys generated from passwords are far weaker than truly random keys. Also,
+            the random generation is seed-based which makes the random number scheme
+            weaker than true cryptographic random number generators. Due to this, it is
+            recommended that CreateBase64Key be used without a password when possible,
+            as that overload generates a cryptographically strong key value.
+            </remarks>
+            <param name="password">String password value used to generate the key</param>
+            <returns>Base64 encoded byte array containing the key value</returns>
+        </member>
+        <member name="M:SerializationWrapper.CryptoWrapperBase.CreateBase64Key(SerializationWrapper.CryptoWrapperBase.AlgorithmType,System.String)">
+            <summary>
+            Creates a random key value by using
+            the supplied password as a seed value
+            </summary>
+            <remarks>
+            Keys generated from passwords are far weaker than truly random keys. Also,
+            the random generation is seed-based which makes the random number scheme
+            weaker than true cryptographic random number generators. Due to this, it is
+            recommended that CreateBase64Key be used without a password when possible,
+            as that overload generates a cryptographically strong key value.
+            </remarks>
+            <param name="calg">Type of algorithm to use for encryption</param>
+            <param name="password">String password value used to generate the key</param>
+            <returns>Base64 encoded byte array containing the key value</returns>
+        </member>
+        <member name="M:SerializationWrapper.CryptoWrapperBase.CreateBase64Key(System.Security.Cryptography.SymmetricAlgorithm)">
+            <summary>
+            Creates a random key value appropriate for
+            the encryption algorithm
+            </summary>
+            <param name="encryptionAlgorithm">Instance of SymmetricAlgorithm used to create the key</param>
+            <returns>Base64 encoded byte array containing the key value</returns>
+        </member>
+        <member name="M:SerializationWrapper.CryptoWrapperBase.CreateBase64Key(System.Security.Cryptography.SymmetricAlgorithm,System.String)">
+            <summary>
+            Creates a random key value by using
+            the supplied password as a seed value
+            </summary>
+            <remarks>
+            Keys generated from passwords are far weaker than truly random keys. Also,
+            the random generation is seed-based which makes the random number scheme
+            weaker than true cryptographic random number generators. Due to this, it is
+            recommended that CreateBase64Key be used without a password when possible,
+            as that overload generates a cryptographically strong key value.
+            </remarks>
+            <param name="encryptionAlgorithm">Instance of SymmetricAlgorithm used to create the key</param>
+            <param name="password">String password value used to generate the key</param>
+            <returns>Base64 encoded byte array containing the key value</returns>
+        </member>
+        <member name="T:SerializationWrapper.CryptoWrapperBase.AlgorithmType">
+            <summary>
+            The supported encryption algorithms
+            </summary>
+        </member>
+        <member name="M:SerializationWrapper.CryptoWrapper.GetObject(System.String)">
+            <summary>
+            Returns a deserialized and decrypted instance of
+            the wrapped object
+            </summary>
+            <param name="base64Key">Base64 encoded byte array containing the encryption key</param>
+            <returns>The wrapped object</returns>
+        </member>
+        <member name="M:SerializationWrapper.CryptoWrapper.GetObject(SerializationWrapper.CryptoWrapperBase.AlgorithmType,System.String)">
+            <summary>
+            Returns a deserialized and decrypted instance of
+            the wrapped object
+            </summary>
+            <param name="calg">Type of algorithm to use for decryption</param>
+            <param name="base64Key">Base64 encoded byte array containing the encryption key</param>
+            <returns>The wrapped object</returns>
+        </member>
+        <member name="M:SerializationWrapper.CryptoWrapper.#ctor(System.Object,System.String)">
+            <summary>
+            Creates an instance of the class, initializing
+            it with the wrapped object, which is immediately
+            serialized and encrypted.
+            </summary>
+            <remarks>
+            <para>
+            The wrappedObject must be marked with the Serializable attribute.
+            </para><para>
+            The IV value is randomly generated.
+            </para>
+            </remarks>
+            <param name="wrappedObject">The object to be encrypted</param>
+            <param name="base64Key">Base64 encoded byte array containing the encryption key</param>
+        </member>
+        <member name="M:SerializationWrapper.CryptoWrapper.#ctor(System.Object,SerializationWrapper.CryptoWrapperBase.AlgorithmType,System.String)">
+            <summary>
+            Creates an instance of the class, initializing
+            it with the wrapped object, which is immediately
+            serialized and encrypted.
+            </summary>
+            <remarks>
+            <para>
+            The wrappedObject must be marked with the Serializable attribute.
+            </para><para>
+            The IV value is randomly generated.
+            </para>
+            </remarks>
+            <param name="wrappedObject">The object to be encrypted</param>
+            <param name="calg">Type of algorithm to use for encryption</param>
+            <param name="base64Key">Base64 encoded byte array containing the encryption key</param>
+        </member>
+        <member name="M:SerializationWrapper.CryptoWrapper`1.GetObject(System.String)">
+            <summary>
+            Returns a deserialized and decrypted instance of
+            the wrapped object
+            </summary>
+            <param name="base64Key">Base64 encoded byte array containing the encryption key</param>
+            <returns>The wrapped object</returns>
+        </member>
+        <member name="M:SerializationWrapper.CryptoWrapper`1.GetObject(SerializationWrapper.CryptoWrapperBase.AlgorithmType,System.String)">
+            <summary>
+            Returns a deserialized and decrypted instance of
+            the wrapped object
+            </summary>
+            <param name="calg">Type of algorithm to use for decryption</param>
+            <param name="base64Key">Base64 encoded byte array containing the encryption key</param>
+            <returns>The wrapped object</returns>
+        </member>
+        <member name="M:SerializationWrapper.CryptoWrapper`1.#ctor(`0,System.String)">
+            <summary>
+            Creates an instance of the class, initializing
+            it with the wrapped object, which is immediately
+            serialized and encrypted.
+            </summary>
+            <remarks>
+            <para>
+            The wrappedObject must be marked with the Serializable attribute.
+            </para><para>
+            The IV value is randomly generated.
+            </para>
+            </remarks>
+            <param name="wrappedObject">The object to be encrypted</param>
+            <param name="base64Key">Base64 encoded byte array containing the encryption key</param>
+        </member>
+        <member name="M:SerializationWrapper.CryptoWrapper`1.#ctor(`0,SerializationWrapper.CryptoWrapperBase.AlgorithmType,System.String)">
+            <summary>
+            Creates an instance of the class, initializing
+            it with the wrapped object, which is immediately
+            serialized and encrypted.
+            </summary>
+            <remarks>
+            <para>
+            The wrappedObject must be marked with the Serializable attribute.
+            </para><para>
+            The IV value is randomly generated.
+            </para>
+            </remarks>
+            <param name="wrappedObject">The object to be encrypted</param>
+            <param name="calg">Type of algorithm to use for encryption</param>
+            <param name="base64Key">Base64 encoded byte array containing the encryption key</param>
+        </member>
+        <member name="M:SerializationWrapper.DSASignedWrapper`1.GetObject">
+            <summary>
+            Returns the wrapped object
+            </summary>
+            <returns>The wrapped object</returns>
+        </member>
+        <member name="M:SerializationWrapper.DSASignedWrapper`1.Verify(System.String)">
+            <summary>
+            Verifies the signature of the wrapped object
+            </summary>
+            <param name="xmlPublicKey">A valid DSA public key in XML format</param>
+        </member>
+        <member name="M:SerializationWrapper.DSASignedWrapper`1.Verify(System.Security.Cryptography.DSACryptoServiceProvider)">
+            <summary>
+            Verifies the signature of the wrapped object
+            </summary>
+            <param name="dsa">An instance of a preconfigured DSACryptoServiceProvider</param>
+        </member>
+        <member name="M:SerializationWrapper.DSASignedWrapper`1.#ctor(`0,System.String)">
+            <summary>
+            Creates an instance of the class, initializing it
+            with the wrapped object, which is immediately signed
+            </summary>
+            <param name="wrappedObject">The object to be signed</param>
+            <param name="xmlPrivateKey">A valid DSA public/private key pair in XML format</param>
+        </member>
+        <member name="M:SerializationWrapper.DSASignedWrapper`1.#ctor(`0,System.Security.Cryptography.DSACryptoServiceProvider)">
+            <summary>
+            Creates an instance of the class, initializing it
+            with the wrapped object, which is immediately signed
+            </summary>
+            <param name="wrappedObject">The object to be signed</param>
+            <param name="dsa">An instance of a preconfigured DSACryptoServiceProvider</param>
+        </member>
+        <member name="T:SerializationWrapper.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:SerializationWrapper.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:SerializationWrapper.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="M:SerializationWrapper.RSACryptoWrapper`1.GetObject(System.String)">
+            <summary>
+            Returns a deserialized and decrypted instance of
+            the wrapped object
+            </summary>
+            <param name="xmlPrivateKey">A valid RSA public/private key in XML format</param>
+            <returns>The wrapped object</returns>
+        </member>
+        <member name="M:SerializationWrapper.RSACryptoWrapper`1.GetObject(System.Security.Cryptography.RSACryptoServiceProvider)">
+            <summary>
+            Returns a deserialized and decrypted instance of
+            the wrapped object
+            </summary>
+            <param name="rsa">An instance of a preconfigured RSACryptoServiceProvider</param>
+            <returns>The wrapped object</returns>
+        </member>
+        <member name="M:SerializationWrapper.RSACryptoWrapper`1.#ctor(`0,System.String)">
+            <summary>
+            Creates an instance of the class, initializing
+            it with the wrapped object, which is immediately
+            serialized and encrypted.
+            </summary>
+            <remarks>
+            The wrappedObject must be marked with the Serializable attribute.
+            </remarks>
+            <param name="wrappedObject">The object to be encrypted</param>
+            <param name="xmlPublicKey">A valid RSA public key in XML format</param>
+        </member>
+        <member name="M:SerializationWrapper.RSACryptoWrapper`1.#ctor(`0,System.Security.Cryptography.RSACryptoServiceProvider)">
+            <summary>
+            Creates an instance of the class, initializing
+            it with the wrapped object, which is immediately
+            serialized and encrypted.
+            </summary>
+            <remarks>
+            The wrappedObject must be marked with the Serializable attribute.
+            </remarks>
+            <param name="wrappedObject">The object to be encrypted</param>
+            <param name="rsa">An instance of a preconfigured RSACryptoServiceProvider</param>
+        </member>
+        <member name="M:SerializationWrapper.RSASignedWrapper`1.GetObject">
+            <summary>
+            Returns the wrapped object
+            </summary>
+            <returns>The wrapped object</returns>
+        </member>
+        <member name="M:SerializationWrapper.RSASignedWrapper`1.Verify(System.String)">
+            <summary>
+            Verifies the signature of the wrapped object
+            </summary>
+            <param name="xmlPublicKey">A valid RSA public key in XML format</param>
+        </member>
+        <member name="M:SerializationWrapper.RSASignedWrapper`1.Verify(System.Security.Cryptography.RSACryptoServiceProvider,System.Object)">
+            <summary>
+            Verifies the signature of the wrapped object
+            </summary>
+            <param name="rsa">An instance of a preconfigured RSACryptoServiceProvider</param>
+            <param name="halg">A hash algorithm (String, algorithm or type) as required by RSACryptoServiceProvider.VerifyData</param>
+        </member>
+        <member name="M:SerializationWrapper.RSASignedWrapper`1.#ctor(`0,System.String)">
+            <summary>
+            Creates an instance of the class, initializing it
+            with the wrapped object, which is immediately signed
+            </summary>
+            <param name="wrappedObject">The object to be signed</param>
+            <param name="xmlPrivateKey">A valid RSA public/private key pair in XML format</param>
+        </member>
+        <member name="M:SerializationWrapper.RSASignedWrapper`1.#ctor(`0,System.String,System.Object)">
+            <summary>
+            Creates an instance of the class, initializing it
+            with the wrapped object, which is immediately signed
+            </summary>
+            <param name="wrappedObject">The object to be signed</param>
+            <param name="xmlPrivateKey">A valid RSA public/private key pair in XML format</param>
+            <param name="halg">A hash algorithm (String, algorithm or type) as required by RSACryptoServiceProvider.VerifyData</param>
+        </member>
+        <member name="M:SerializationWrapper.RSASignedWrapper`1.#ctor(`0,System.Security.Cryptography.RSACryptoServiceProvider,System.Object)">
+            <summary>
+            Creates an instance of the class, initializing it
+            with the wrapped object, which is immediately signed
+            </summary>
+            <param name="wrappedObject">The object to be signed</param>
+            <param name="rsa">An instance of a preconfigured RSACryptoServiceProvider</param>
+            <param name="halg">A hash algorithm (String, algorithm or type) as required by RSACryptoServiceProvider.VerifyData</param>
+        </member>
+        <member name="M:SerializationWrapper.SignedWrapperBase.CreateBase64Key">
+            <summary>
+            Creates a random key value appropriate for
+            the encryption algorithm
+            </summary>
+            <returns>Base64 encoded byte array containing the key value</returns>
+        </member>
+        <member name="M:SerializationWrapper.SignedWrapperBase.CreateBase64Key(System.String)">
+            <summary>
+            Creates a random key value by using
+            the supplied password as a seed value
+            </summary>
+            <remarks>
+            Keys generated from passwords are far weaker than truly random keys. Also,
+            the random generation is seed-based which makes the random number scheme
+            weaker than true cryptographic random number generators. Due to this, it is
+            recommended that CreateBase64Key be used without a password when possible,
+            as that overload generates a cryptographically strong key value.
+            </remarks>
+            <param name="password">String password value used to generate the key</param>
+            <returns>Base64 encoded byte array containing the key value</returns>
+        </member>
+        <member name="M:SerializationWrapper.SignedWrapperBase.ComputeHash(System.Byte[],System.Security.Cryptography.HashAlgorithm,System.String)">
+            <summary>
+            Creates a hash value for the supplied data
+            </summary>
+            <remarks>
+            The HMACSHA1 algorithm uses the hash key value as part of its
+            algorithm. For all other algorithms the hash key value is used
+            as a salt value prior to execution of the hash algorithm.
+            </remarks>
+            <param name="plainText">The data from which to calculate the hash</param>
+            <param name="base64Key">Base64 encoded byte array containing the hash key</param>
+            <returns>Byte array containing the hash value</returns>
+        </member>
+        <member name="T:SerializationWrapper.SignedWrapperBase.AlgorithmType">
+            <summary>
+            The supported hash algorithms
+            </summary>
+        </member>
+        <member name="M:SerializationWrapper.SignedWrapper.GetObject">
+            <summary>
+            Returns the wrapped object
+            </summary>
+            <returns>The wrapped object</returns>
+        </member>
+        <member name="M:SerializationWrapper.SignedWrapper.Verify(System.String)">
+            <summary>
+            Verifies the signature of the wrapped object
+            </summary>
+            <remarks>
+            The HMACSHA1 algorithm is used by this method. To use
+            other algorithms see the overloads of this method.
+            </remarks>
+            <param name="base64Key">Base64 encoded byte array containing the hash key</param>
+            <returns>True of the signature is valid</returns>
+        </member>
+        <member name="M:SerializationWrapper.SignedWrapper.Verify(SerializationWrapper.SignedWrapperBase.AlgorithmType,System.String)">
+            <summary>
+            Verifies the signature of the wrapped object
+            </summary>
+            <param name="halg">The type of hash algorithm to use</param>
+            <param name="base64Key">Base64 encoded byte array containing the hash key</param>
+            <returns>True of the signature is valid</returns>
+        </member>
+        <member name="M:SerializationWrapper.SignedWrapper.#ctor(System.Object,SerializationWrapper.SignedWrapperBase.AlgorithmType,System.String)">
+            <summary>
+            Creates an instance of the class, initializing it
+            with the wrapped object, which is immediately signed
+            </summary>
+            <remarks>
+            The wrappedObject must be marked with the Serializable attribute.
+            </remarks>
+            <param name="wrappedObject">The object to be signed</param>
+            <param name="halg">The type of hash algorithm to use</param>
+            <param name="base64Key">Base64 encoded byte array containing the hash key</param>
+        </member>
+        <member name="M:SerializationWrapper.SignedWrapper.#ctor(System.Object,System.String)">
+            <summary>
+            Creates an instance of the class, initializing it
+            with the wrapped object, which is immediately signed
+            </summary>
+            <param name="wrappedObject">The object to be signed</param>
+            <param name="base64Key">Base64 encoded byte array containing the hash key</param>
+        </member>
+        <member name="M:SerializationWrapper.SignedWrapper`1.GetObject">
+            <summary>
+            Returns the wrapped object
+            </summary>
+            <returns>The wrapped object</returns>
+        </member>
+        <member name="M:SerializationWrapper.SignedWrapper`1.Verify(System.String)">
+            <summary>
+            Verifies the signature of the wrapped object
+            </summary>
+            <remarks>
+            The HMACSHA1 algorithm is used by this method. To use
+            other algorithms see the overloads of this method.
+            </remarks>
+            <param name="base64Key">Base64 encoded byte array containing the hash key</param>
+            <returns>True of the signature is valid</returns>
+        </member>
+        <member name="M:SerializationWrapper.SignedWrapper`1.Verify(SerializationWrapper.SignedWrapperBase.AlgorithmType,System.String)">
+            <summary>
+            Verifies the signature of the wrapped object
+            </summary>
+            <param name="halg">The type of hash algorithm to use</param>
+            <param name="base64Key">Base64 encoded byte array containing the hash key</param>
+            <returns>True of the signature is valid</returns>
+        </member>
+        <member name="M:SerializationWrapper.SignedWrapper`1.#ctor(`0,SerializationWrapper.SignedWrapperBase.AlgorithmType,System.String)">
+            <summary>
+            Creates an instance of the class, initializing it
+            with the wrapped object, which is immediately signed
+            </summary>
+            <remarks>
+            The wrappedObject must be marked with the Serializable attribute.
+            </remarks>
+            <param name="wrappedObject">The object to be signed</param>
+            <param name="halg">The type of hash algorithm to use</param>
+            <param name="base64Key">Base64 encoded byte array containing the hash key</param>
+        </member>
+        <member name="M:SerializationWrapper.SignedWrapper`1.#ctor(`0,System.String)">
+            <summary>
+            Creates an instance of the class, initializing it
+            with the wrapped object, which is immediately signed
+            </summary>
+            <param name="wrappedObject">The object to be signed</param>
+            <param name="base64Key">Base64 encoded byte array containing the hash key</param>
+        </member>
+    </members>
+</doc>
