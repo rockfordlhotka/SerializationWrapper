@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1000]C:\Visual Studio Projects\SerializationWrapper\SerializationWrappercs\SerializationWrappercs.nunit</TopNode>
+  <SelectedNode>[0-1000]C:\Visual Studio Projects\SerializationWrapper\SerializationWrappercs\SerializationWrappercs.nunit</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1000]C:\Visual Studio Projects\SerializationWrapper\SerializationWrappercs\SerializationWrappercs.nunit" Expanded="true">
+      <Nodes>
+        <Node UniqueName="[0-1026]C:\Visual Studio Projects\SerializationWrapper\SerializationWrappercs\SerializationWrapper.Test\bin\Debug\SerializationWrapper.Test.dll" Expanded="true">
+          <Nodes>
+            <Node UniqueName="[0-1027]SerializationWrapper" Expanded="true">
+              <Nodes>
+                <Node UniqueName="[0-1028]SerializationWrapper.Test" Expanded="true">
+                  <Nodes>
+                    <Node UniqueName="[0-1011]SerializationWrapper.Test.CompressionTests" Expanded="true">
+                      <Nodes>
+                        <Node UniqueName="[0-1012]SerializationWrapper.Test.CompressionTests.Deflate" />
+                        <Node UniqueName="[0-1013]SerializationWrapper.Test.CompressionTests.GZip" />
+                      </Nodes>
+                    </Node>
+                    <Node UniqueName="[0-1001]SerializationWrapper.Test.EncryptionTests" Expanded="true">
+                      <Nodes>
+                        <Node UniqueName="[0-1002]SerializationWrapper.Test.EncryptionTests.Combined" />
+                        <Node UniqueName="[0-1003]SerializationWrapper.Test.EncryptionTests.DefaultEncrypt" />
+                        <Node UniqueName="[0-1004]SerializationWrapper.Test.EncryptionTests.DefaultEncryptPassword" />
+                        <Node UniqueName="[0-1005]SerializationWrapper.Test.EncryptionTests.DESEncrypt" />
+                        <Node UniqueName="[0-1007]SerializationWrapper.Test.EncryptionTests.RC2Encrypt" />
+                        <Node UniqueName="[0-1008]SerializationWrapper.Test.EncryptionTests.RijndaelEncrypt" />
+                        <Node UniqueName="[0-1009]SerializationWrapper.Test.EncryptionTests.RSAEncrypt" />
+                        <Node UniqueName="[0-1010]SerializationWrapper.Test.EncryptionTests.RSAEncryptLarge" />
+                        <Node UniqueName="[0-1006]SerializationWrapper.Test.EncryptionTests.TripleDESEncrypt" />
+                      </Nodes>
+                    </Node>
+                    <Node UniqueName="[0-1014]SerializationWrapper.Test.SigningTests" Expanded="true">
+                      <Nodes>
+                        <Node UniqueName="[0-1015]SerializationWrapper.Test.SigningTests.DefaultSign" />
+                        <Node UniqueName="[0-1016]SerializationWrapper.Test.SigningTests.DefaultSignPassword" />
+                        <Node UniqueName="[0-1025]SerializationWrapper.Test.SigningTests.DSASign" />
+                        <Node UniqueName="[0-1017]SerializationWrapper.Test.SigningTests.HMACSHA1Sign" />
+                        <Node UniqueName="[0-1018]SerializationWrapper.Test.SigningTests.MD5Sign" />
+                        <Node UniqueName="[0-1023]SerializationWrapper.Test.SigningTests.RIPEMD160Sign" />
+                        <Node UniqueName="[0-1024]SerializationWrapper.Test.SigningTests.RSASign" />
+                        <Node UniqueName="[0-1019]SerializationWrapper.Test.SigningTests.SHA1Sign" />
+                        <Node UniqueName="[0-1020]SerializationWrapper.Test.SigningTests.SHA256Sign" />
+                        <Node UniqueName="[0-1021]SerializationWrapper.Test.SigningTests.SHA384Sign" />
+                        <Node UniqueName="[0-1022]SerializationWrapper.Test.SigningTests.SHA512Sign" />
+                      </Nodes>
+                    </Node>
+                  </Nodes>
+                </Node>
+              </Nodes>
+            </Node>
+          </Nodes>
+        </Node>
+      </Nodes>
+    </Node>
+  </Nodes>
+</VisualState>

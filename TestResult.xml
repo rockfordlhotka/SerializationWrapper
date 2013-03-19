@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Visual Studio Projects\SerializationWrapper\SerializationWrappercs\SerializationWrappercs.nunit" total="22" failures="0" not-run="0" date="2009-01-16" time="10:58:41">
+  <environment nunit-version="2.4.4.0" clr-version="2.0.50727.3053" os-version="Microsoft Windows NT 6.0.6001 Service Pack 1" platform="Win32NT" cwd="C:\Program Files\NUnit 2.4.4\bin" machine-name="ORTH" user="Illiante" user-domain="Orth" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite name="C:\Visual Studio Projects\SerializationWrapper\SerializationWrappercs\SerializationWrappercs.nunit" success="True" time="8.988" asserts="0">
+    <results>
+      <test-suite name="C:\Visual Studio Projects\SerializationWrapper\SerializationWrappercs\SerializationWrapper.Test\bin\Debug\SerializationWrapper.Test.dll" success="True" time="8.979" asserts="0">
+        <results>
+          <test-suite name="SerializationWrapper" success="True" time="8.978" asserts="0">
+            <results>
+              <test-suite name="Test" success="True" time="8.977" asserts="0">
+                <results>
+                  <test-suite name="CompressionTests" success="True" time="0.111" asserts="0">
+                    <results>
+                      <test-case name="SerializationWrapper.Test.CompressionTests.Deflate" executed="True" success="True" time="0.091" asserts="1" />
+                      <test-case name="SerializationWrapper.Test.CompressionTests.GZip" executed="True" success="True" time="0.006" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="EncryptionTests" success="True" time="2.279" asserts="0">
+                    <results>
+                      <test-case name="SerializationWrapper.Test.EncryptionTests.Combined" executed="True" success="True" time="0.236" asserts="1" />
+                      <test-case name="SerializationWrapper.Test.EncryptionTests.DefaultEncrypt" executed="True" success="True" time="0.297" asserts="1" />
+                      <test-case name="SerializationWrapper.Test.EncryptionTests.DefaultEncryptPassword" executed="True" success="True" time="0.151" asserts="1" />
+                      <test-case name="SerializationWrapper.Test.EncryptionTests.DESEncrypt" executed="True" success="True" time="0.341" asserts="1" />
+                      <test-case name="SerializationWrapper.Test.EncryptionTests.RC2Encrypt" executed="True" success="True" time="0.259" asserts="1" />
+                      <test-case name="SerializationWrapper.Test.EncryptionTests.RijndaelEncrypt" executed="True" success="True" time="0.280" asserts="1" />
+                      <test-case name="SerializationWrapper.Test.EncryptionTests.RSAEncrypt" executed="True" success="True" time="0.196" asserts="1" />
+                      <test-case name="SerializationWrapper.Test.EncryptionTests.RSAEncryptLarge" executed="True" success="True" time="0.275" asserts="1" />
+                      <test-case name="SerializationWrapper.Test.EncryptionTests.TripleDESEncrypt" executed="True" success="True" time="0.232" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="SigningTests" success="True" time="6.572" asserts="0">
+                    <results>
+                      <test-case name="SerializationWrapper.Test.SigningTests.DefaultSign" executed="True" success="True" time="0.508" asserts="1" />
+                      <test-case name="SerializationWrapper.Test.SigningTests.DefaultSignPassword" executed="True" success="True" time="1.048" asserts="1" />
+                      <test-case name="SerializationWrapper.Test.SigningTests.DSASign" executed="True" success="True" time="0.384" asserts="1" />
+                      <test-case name="SerializationWrapper.Test.SigningTests.HMACSHA1Sign" executed="True" success="True" time="0.388" asserts="1" />
+                      <test-case name="SerializationWrapper.Test.SigningTests.MD5Sign" executed="True" success="True" time="0.537" asserts="1" />
+                      <test-case name="SerializationWrapper.Test.SigningTests.RIPEMD160Sign" executed="True" success="True" time="0.990" asserts="1" />
+                      <test-case name="SerializationWrapper.Test.SigningTests.RSASign" executed="True" success="True" time="0.670" asserts="1" />
+                      <test-case name="SerializationWrapper.Test.SigningTests.SHA1Sign" executed="True" success="True" time="0.327" asserts="1" />
+                      <test-case name="SerializationWrapper.Test.SigningTests.SHA256Sign" executed="True" success="True" time="0.726" asserts="1" />
+                      <test-case name="SerializationWrapper.Test.SigningTests.SHA384Sign" executed="True" success="True" time="0.551" asserts="1" />
+                      <test-case name="SerializationWrapper.Test.SigningTests.SHA512Sign" executed="True" success="True" time="0.431" asserts="1" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
